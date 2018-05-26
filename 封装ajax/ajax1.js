@@ -85,7 +85,7 @@
             }
             data = str.substring(0,str.length-1);
           }
-          if(/^(get|put|head|delete|option|trace)$/i.test(method)){
+          if(/^(get|head|delete|option|trace)$/i.test(method)){
             // 'xx=xxx&xxx=xxxx'
             this.url += `${this.check()}${data}`;
             this.data = null;
